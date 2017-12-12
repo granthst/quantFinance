@@ -27,7 +27,7 @@ public :
                   const double& sigma);
     VanillaOption(const VanillaOption& rhs);
     VanillaOption& operator=(const VanillaOption& rhs);
-    ~VanillaOption ();
+    virtual ~VanillaOption ();
     
     double getK() const;
     double getr() const;
