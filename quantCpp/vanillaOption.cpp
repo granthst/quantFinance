@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include "vanillaOption.h"
 #include <cmath>
+#include "statUtils.h"
 
 void VanillaOption::init(){
     K = 100;
@@ -89,5 +90,6 @@ double VanillaOption::calc_put_price () const{
     double d_2 = d_1 - sigma_sqrt_T;
     return (K*exp(-r*T)*N(-d_2)) - (S*exp(-r*T)*N(-d_1));
 }
+
 
 
